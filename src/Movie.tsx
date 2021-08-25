@@ -4,11 +4,12 @@ import "./Movie.css";
 export function Movie({ id, year, title, summary, posterUrl, genres }: MovieInfo): JSX.Element {
   return (
     <div key={id} className="movie">
-      <img src={posterUrl} alt={`poster of ${title}`} title={title} />
+      <div className="movie__poster">
+        <img src={posterUrl} alt={`poster of ${title}`} title={title} />
+      </div>
       <div className="movie__data">
         <h1 className="movie__title">{title}</h1>
         <h3 className="movie__year">{year}</h3>
-        <p className="movie__summary">{summary}</p>
         <ul className="genres">
           {genres.map((genre) => (
             <li key={genre} className="genres__genre">
@@ -16,6 +17,7 @@ export function Movie({ id, year, title, summary, posterUrl, genres }: MovieInfo
             </li>
           ))}
         </ul>
+        <p className="movie__summary">{summary}</p>
       </div>
     </div>
   );

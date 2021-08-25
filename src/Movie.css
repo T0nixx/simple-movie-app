@@ -1,0 +1,75 @@
+.movie {
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  align-self: center;
+  flex: 0.3 0 700px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  font-size: 20px;
+}
+
+.movie .movie__poster {
+  flex: 0 0 270px;
+  display: flex;
+  flex-direction: column;
+  min-height: 385px;
+}
+
+.movie .movie__poster img {
+  flex: 0;
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 5px rgb(180, 180, 180);
+}
+
+.movie .movie__data {
+  margin: 20px;
+  color: rgb(170, 169, 173);
+}
+
+.movie .movie__title {
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+}
+
+.movie .movie__year {
+  margin: 0 0 5px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.movie .genres {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 0 5px;
+  padding: 0;
+}
+
+.movie .genres .genres__genre {
+  font-size: 1em;
+  margin: 0 1em 0 0;
+}
+
+.movie .movie__summary {
+  font-size: 1em;
+}
+
+@media (max-width: 760px) {
+  .movie {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .movie__data {
+    margin-top: 0;
+  }
+}
