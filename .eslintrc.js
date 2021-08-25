@@ -16,7 +16,7 @@ module.exports = {
   globals: {},
   rules: {
     // prettier
-    "prettier/prettier": ["error"],
+    // "prettier/prettier": ["error"],
     // TypeScript
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/explicit-member-accessibility": "off",
@@ -40,6 +40,8 @@ module.exports = {
         tsx: "never",
       },
     ],
+    camelcase: "off",
+    "@typescript-eslint/naming-convention": "off",
   },
   settings: {
     "import/resolver": {
