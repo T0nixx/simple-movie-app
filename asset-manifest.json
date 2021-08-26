@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/simple-movie-app/static/css/main.3195d544.chunk.css",
-    "main.js": "/simple-movie-app/static/js/main.fc01f13a.chunk.js",
-    "main.js.map": "/simple-movie-app/static/js/main.fc01f13a.chunk.js.map",
+    "main.js": "/simple-movie-app/static/js/main.c984399c.chunk.js",
+    "main.js.map": "/simple-movie-app/static/js/main.c984399c.chunk.js.map",
     "runtime-main.js": "/simple-movie-app/static/js/runtime-main.86794c78.js",
     "runtime-main.js.map": "/simple-movie-app/static/js/runtime-main.86794c78.js.map",
-    "static/js/2.c01d7fcd.chunk.js": "/simple-movie-app/static/js/2.c01d7fcd.chunk.js",
-    "static/js/2.c01d7fcd.chunk.js.map": "/simple-movie-app/static/js/2.c01d7fcd.chunk.js.map",
+    "static/js/2.d4ab87e7.chunk.js": "/simple-movie-app/static/js/2.d4ab87e7.chunk.js",
+    "static/js/2.d4ab87e7.chunk.js.map": "/simple-movie-app/static/js/2.d4ab87e7.chunk.js.map",
     "index.html": "/simple-movie-app/index.html",
     "static/css/main.3195d544.chunk.css.map": "/simple-movie-app/static/css/main.3195d544.chunk.css.map",
-    "static/js/2.c01d7fcd.chunk.js.LICENSE.txt": "/simple-movie-app/static/js/2.c01d7fcd.chunk.js.LICENSE.txt"
+    "static/js/2.d4ab87e7.chunk.js.LICENSE.txt": "/simple-movie-app/static/js/2.d4ab87e7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.86794c78.js",
-    "static/js/2.c01d7fcd.chunk.js",
+    "static/js/2.d4ab87e7.chunk.js",
     "static/css/main.3195d544.chunk.css",
-    "static/js/main.fc01f13a.chunk.js"
+    "static/js/main.c984399c.chunk.js"
   ]
 }
