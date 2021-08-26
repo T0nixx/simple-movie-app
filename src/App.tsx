@@ -1,55 +1,17 @@
 import React from "react";
-import axios from "axios";
-import { Movie, MovieInfo, MovieFromAPI } from "./Movie";
-import "./App.css";
+import { BrowserRouter, Route } from "react-router-dom";
+import About from "./routes/About";
+import Home from "./routes/Home";
+import Navigation from "./components/Navigation";
 
-class App extends React.Component<
-  Record<string, never>,
-  { isLoading: boolean; movies: MovieInfo[] }
-> {
-  constructor(props: Record<string, never>) {
-    super(props);
-    this.state = {
-      isLoading: true,
-      movies: [],
-    };
-  }
-
-  async componentDidMount(): Promise<void> {
-    const {
-      data: {
-        data: { movies },
-      },
-    } = await axios.get<{ data: { movies: MovieFromAPI[] } }>(
-      "https://yts-proxy.now.sh/list_movies.json?sort_by=rating",
-    );
-    this.setState({
-      movies: movies.map(({ title, year, id, medium_cover_image, summary, genres }) => ({
-        title,
-        year,
-        id,
-        summary,
-        posterUrl: medium_cover_image,
-        genres,
-      })),
-      isLoading: false,
-    });
-  }
-
-  render(): JSX.Element {
-    const { isLoading, movies } = this.state;
-    return (
-      <section className="container">
-        {isLoading ? (
-          <div className="loader">
-            <span className="loader__text">Loading...</span>
-          </div>
-        ) : (
-          <div className="movies">{movies.map(Movie)}</div>
-        )}
-      </section>
-    );
-  }
+function App(): JSX.Element {
+  return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Navigation />
+      <Route path="/about" component={About} />
+      <Route path="/" exact component={Home} />
+    </BrowserRouter>
+  );
 }
 
 export default App;
