@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/simple-movie-app/static/css/main.2a6f788a.chunk.css",
+    "main.js": "/simple-movie-app/static/js/main.47cea828.chunk.js",
+    "main.js.map": "/simple-movie-app/static/js/main.47cea828.chunk.js.map",
+    "runtime-main.js": "/simple-movie-app/static/js/runtime-main.86794c78.js",
+    "runtime-main.js.map": "/simple-movie-app/static/js/runtime-main.86794c78.js.map",
+    "static/js/2.8e8926ff.chunk.js": "/simple-movie-app/static/js/2.8e8926ff.chunk.js",
+    "static/js/2.8e8926ff.chunk.js.map": "/simple-movie-app/static/js/2.8e8926ff.chunk.js.map",
+    "index.html": "/simple-movie-app/index.html",
+    "static/css/main.2a6f788a.chunk.css.map": "/simple-movie-app/static/css/main.2a6f788a.chunk.css.map",
+    "static/js/2.8e8926ff.chunk.js.LICENSE.txt": "/simple-movie-app/static/js/2.8e8926ff.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86794c78.js",
+    "static/js/2.8e8926ff.chunk.js",
+    "static/css/main.2a6f788a.chunk.css",
+    "static/js/main.47cea828.chunk.js"
+  ]
+}
