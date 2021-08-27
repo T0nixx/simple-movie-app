@@ -2,13 +2,16 @@
   background-color: rgb(255, 255, 255);
   margin: 10px;
   border-radius: 10px;
-
   display: flex;
-  align-self: center;
   flex: 0.3 0 700px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
     0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   font-size: 20px;
+}
+
+.movie a {
+  text-decoration: none;
+  display: flex;
 }
 
 .movie .movie__poster {
@@ -31,7 +34,7 @@
 }
 
 .movie .movie__title {
-  font-size: 1.4em;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 5px;
   color: rgb(0, 0, 0);
@@ -54,8 +57,8 @@
 }
 
 .movie .genres .genres__genre {
-  font-size: 1em;
-  margin: 0 1em 0 0;
+  font-size: 20px;
+  margin-right: 1em;
 }
 
 .movie .movie__summary {
